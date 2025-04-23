@@ -104,6 +104,7 @@ class BlogController extends Controller
 
         return view('blog.index', compact(
             'data',
+            'random',
             'randomCategory',
             'secondRandomCategory',
             'randomSource',

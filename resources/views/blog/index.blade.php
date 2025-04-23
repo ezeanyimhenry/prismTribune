@@ -289,174 +289,51 @@
 
                             <div class="tab-content">
                                 <div role="tabpanel" class="tab-pane active" id="tab-popular">
-
-                                    <article class="widget-post clearfix">
-                                        <div class="simple-thumb">
-                                            <a href="#">
-                                                <img src="img/small-thumb/small_thumb13.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <header>
-                                            <h3>
-                                                <a href="#">The 10 most beautiful cars money can buy</a>
-                                            </h3>
-                                            <p class="simple-share">
-                                                <span><i class="fa fa-eye"></i> 1,129,753 views</span>
-                                            </p>
-                                        </header>
-                                    </article>
-
-                                    <article class="widget-post clearfix">
-                                        <div class="simple-thumb">
-                                            <a href="#">
-                                                <span class="play-button"><i class="fa fa-play"></i></span>
-                                                <img src="img/small-thumb/small_thumb12.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <header>
-                                            <h3>
-                                                <a href="#">Asian Startup Companies Boom</a>
-                                            </h3>
-                                            <p class="simple-share">
-                                                <span><i class="fa fa-eye"></i> 989,039 views</span>
-                                            </p>
-                                        </header>
-                                    </article>
-
-                                    <article class="widget-post clearfix">
-                                        <div class="simple-thumb">
-                                            <a href="#">
-                                                <img src="img/small-thumb/small_thumb14.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <header>
-                                            <h3>
-                                                <a href="#">9 Apps for Transforming Your Phone into The
-                                                    Ultimate Toolkit</a>
-                                            </h3>
-                                            <p class="simple-share">
-                                                <span><i class="fa fa-clock-o"></i> 920,540 views</span>
-                                            </p>
-                                        </header>
-                                    </article>
-
-                                    <article class="widget-post clearfix">
-                                        <div class="simple-thumb">
-                                            <a href="#">
-                                                <img src="img/small-thumb/small_thumb15.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <header>
-                                            <h3>
-                                                <a href="#">15 Books You Should Read Before They Become
-                                                    Movies This Year</a>
-                                            </h3>
-                                            <p class="simple-share">
-                                                <span><i class="fa fa-clock-o"></i> 780,540 views</span>
-                                            </p>
-                                        </header>
-                                    </article>
-
-                                    <article class="widget-post clearfix">
-                                        <div class="simple-thumb">
-                                            <a href="#">
-                                                <img src="img/small-thumb/small_thumb16.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <header>
-                                            <h3>
-                                                <a href="#">The 20 most important Instagram pictures of all
-                                                    time</a>
-                                            </h3>
-                                            <p class="simple-share">
-                                                <span><i class="fa fa-clock-o"></i> 725,566 views</span>
-                                            </p>
-                                        </header>
-                                    </article>
+                                    @foreach ($random['data'] as $article)
+                                        <article class="widget-post clearfix">
+                                            <div class="simple-thumb">
+                                                <a href="{{ $article['id'] }}">
+                                                    <img src="{{ $article['thumbnail'] }}"
+                                                        alt="{{ $article['title'] }}">
+                                                </a>
+                                            </div>
+                                            <header>
+                                                <h3>
+                                                    <a href="{{ $article['id'] }}">{{ $article['title'] }}</a>
+                                                </h3>
+                                                <p class="simple-share">
+                                                    <span><i class="fa fa-clock-o"></i>
+                                                        {{ \Carbon\Carbon::parse($article['published_at'])->diffForHumans() }}</span>
+                                                </p>
+                                            </header>
+                                        </article>
+                                    @endforeach
 
                                 </div><!-- Popular posts -->
                                 <div role="tabpanel" class="tab-pane" id="tab-recent">
-
-                                    <article class="widget-post clearfix">
-                                        <div class="simple-thumb">
-                                            <a href="#">
-                                                <img src="img/small-thumb/small_thumb8.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <header>
-                                            <h3>
-                                                <a href="#">7 Tips for Creating a Functional Home
-                                                    Workspace</a>
-                                            </h3>
-                                            <p class="simple-share">
-                                                <span><i class="fa fa-clock-o"></i> 2 minutes ago</span>
-                                            </p>
-                                        </header>
-                                    </article>
-
-                                    <article class="widget-post clearfix">
-                                        <div class="simple-thumb">
-                                            <a href="#">
-                                                <img src="img/small-thumb/small_thumb5.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <header>
-                                            <h3>
-                                                <a href="#">Does going to the gym count as a sport?</a>
-                                            </h3>
-                                            <p class="simple-share">
-                                                <span><i class="fa fa-clock-o"></i> 2 minutes ago</span>
-                                            </p>
-                                        </header>
-                                    </article>
-
-                                    <article class="widget-post clearfix">
-                                        <div class="simple-thumb">
-                                            <a href="#">
-                                                <img src="img/small-thumb/small_thumb7.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <header>
-                                            <h3>
-                                                <a href="#">Older actors still hot in Hollywood</a>
-                                            </h3>
-                                            <p class="simple-share">
-                                                <span><i class="fa fa-clock-o"></i> 3 minutes ago</span>
-                                            </p>
-                                        </header>
-                                    </article>
-
-                                    <article class="widget-post clearfix">
-                                        <div class="simple-thumb">
-                                            <a href="#">
-                                                <img src="img/small-thumb/small_thumb10.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <header>
-                                            <h3>
-                                                <a href="#">5 Gadget Gifts for Father's Day</a>
-                                            </h3>
-                                            <p class="simple-share">
-                                                <span><i class="fa fa-clock-o"></i> 3 minutes ago</span>
-                                            </p>
-                                        </header>
-                                    </article>
-
-                                    <article class="widget-post clearfix">
-                                        <div class="simple-thumb">
-                                            <a href="#">
-                                                <img src="img/small-thumb/small_thumb6.jpg" alt="">
-                                            </a>
-                                        </div>
-                                        <header>
-                                            <h3>
-                                                <a href="#">Inside U2's Ambitious Upcoming Tour Strategy</a>
-                                            </h3>
-                                            <p class="simple-share">
-                                                <span><i class="fa fa-clock-o"></i> 5 minutes ago</span>
-                                            </p>
-                                        </header>
-                                    </article>
+                                    @php
+                                        $recentFeatured = collect($featured['data']['data'] ?? [])
+                                            ->sortByDesc('published_at')
+                                            ->take(6);
+                                    @endphp
+                                    @foreach ($recentFeatured as $recent)
+                                        <article class="widget-post clearfix">
+                                            <div class="simple-thumb">
+                                                <a href="{{ $recent['id'] }}">
+                                                    <img src="{{ $recent['thumbnail'] }}" alt="{{ $recent['title'] }}">
+                                                </a>
+                                            </div>
+                                            <header>
+                                                <h3>
+                                                    <a href="{{ $recent['id'] }}">{{ $recent['title'] }}</a>
+                                                </h3>
+                                                <p class="simple-share">
+                                                    <span><i class="fa fa-clock-o"></i>
+                                                        {{ \Carbon\Carbon::parse($recent['published_at'])->diffForHumans() }}</span>
+                                                </p>
+                                            </header>
+                                        </article>
+                                    @endforeach
 
                                 </div><!-- Recent Posts -->
                             </div>
@@ -489,126 +366,6 @@
                     </aside>
                 </div><!-- End last column -->
             </div><!-- .main-body -->
-
-            @php
-                // Filter articles for this second category
-                $thirdFilteredArticles = $thirdRandomCategoryArticles; // 1 big + 6 small
-
-                $thirdMain = $thirdFilteredArticles->first();
-                $thirdSubs = $thirdFilteredArticles->slice(1);
-            @endphp
-            <section class="admag-block">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="block-title"><span>{{ $thirdRandomCategory }}</span></h3>
-                    </div>
-                </div>
-
-                <div class="row">
-                    @if ($thirdMain)
-                        <div class="col-md-8">
-                            <article class="featured-small box-news box-big">
-                                <a href="{{ $thirdMain['id'] }}">
-                                    <img src="{{ $thirdMain['thumbnail'] }}" alt="{{ $thirdMain['title'] }}">
-                                </a>
-                                <header class="featured-header">
-                                    <a class="category bgcolor2" href="#">{{ $thirdMain['category'] }}</a>
-                                    <h2><a href="{{ $thirdMain['id'] }}">{{ $thirdMain['title'] }}</a></h2>
-                                    <p class="simple-share">
-                                        <a href="{{ $thirdMain['url'] }}"><b>{{ $thirdMain['source'] }}</b></a> -
-                                        <span
-                                            class="article-date">{{ \Carbon\Carbon::parse($thirdMain['published_at'])->diffForHumans() }}</span>
-                                    </p>
-                                </header>
-                            </article>
-                        </div>
-                    @endif
-
-                    <div class="col-md-4">
-                        <article class="featured-small box-news">
-                            <a href="#">
-                                <img src="img/big-thumb/big_thumb11.jpg" alt="">
-                            </a>
-                            <header class="featured-header">
-                                <a class="category bgcolor2" href="#">Apps</a>
-                                <h2><a href="#">Apple iOS 8 Review</a></h2>
-                                <p class="simple-share">
-                                    by <a href="#"><b>John Doe</b></a> -
-                                    <span class="article-date">34 minutes ago</span>
-                                    <span class="star-reviews">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </span>
-                                </p>
-                            </header>
-                        </article>
-                    </div>
-
-                </div><!--End small box -->
-
-                <div class="row">
-
-                    <div class="col-md-4">
-                        <article class="featured-small box-news">
-                            <a href="#">
-                                <img src="img/big-thumb/big_thumb8.jpg" alt="">
-                            </a>
-                            <header class="featured-header">
-                                <a class="category bgcolor2" href="#">Mobile</a>
-                                <h2><a href="#">The Partnership of Coffee and Tech</a></h2>
-                                <p class="simple-share">
-                                    by <a href="#"><b>John Doe</b></a> -
-                                    <span class="article-date">52 minutes ago</span>
-                                </p>
-                            </header>
-                        </article>
-                    </div>
-
-                    <div class="col-md-4">
-                        <article class="featured-small box-news">
-                            <a href="#">
-                                <span class="play-button"><i class="fa fa-play"></i></span>
-                                <img src="img/big-thumb/big_thumb9.jpg" alt="">
-                            </a>
-                            <header class="featured-header">
-                                <a class="category bgcolor2" href="#">Design</a>
-                                <h2><a href="#">Nikon D5000 review: Design, Controls, Screen</a></h2>
-                                <p class="simple-share">
-                                    by <a href="#"><b>John Doe</b></a> -
-                                    <span class="article-date">1 hour ago</span>
-                                    <span class="star-reviews">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </span>
-                                </p>
-                            </header>
-                        </article>
-                    </div>
-
-                    <div class="col-md-4">
-                        <article class="featured-small box-news">
-                            <a class="play-button" href="#"><i class="fa fa-camera"></i></a>
-                            <a href="#">
-                                <img src="img/big-thumb/big_thumb7.jpg" alt="">
-                            </a>
-                            <header class="featured-header">
-                                <a class="category bgcolor2" href="#">Mobile</a>
-                                <h2><a href="#">What the Viny "Comeback" Really Looks Like</a></h2>
-                                <p class="simple-share">
-                                    by <a href="#"><b>John Doe</b></a> -
-                                    <span class="article-date">2 hours ago</span>
-                                </p>
-                            </header>
-                        </article>
-                    </div>
-                </div><!-- End big box -->
-            </section><!-- .admag-block -->
 
             @php
                 // Filter articles for this second category
