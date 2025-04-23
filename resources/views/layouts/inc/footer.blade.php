@@ -8,9 +8,9 @@
                         <div class="col-md-4">
                             <div class="footer-block clearfix">
                                 <p class="clearfix">
-                                    <a class="logo" href="index.html"
-                                        title="Admag - Responsive magazine HTML Template" rel="home">
-                                        AD <span>MAG</span>
+                                    <a class="logo" href="/" title="prismTribune - Home for updated news"
+                                        rel="home">
+                                        <img src="{{ asset('img/logo.png') }}" alt="Logo" style="width: 150px;">
                                     </a><!-- .logo -->
                                 </p>
                                 <p class="description">
@@ -97,7 +97,7 @@
                             </div><!-- Footer Block -->
                         </div>
 
-                        <div class="col-md-3">
+                        {{-- <div class="col-md-3">
                             <div class="footer-block clearfix">
                                 <h3 class="footer-title">Newsletter</h3>
                                 <p>The more you tighten your grip, Tarkin, the more star systems will slip
@@ -111,7 +111,7 @@
                                     </div>
                                 </form>
                             </div><!-- Footer Block -->
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -124,7 +124,7 @@
                 <div class="mag-content">
                     <div class="row">
                         <div class="col-md-6">
-                            <p>Copyright Admag © 2015. All Rights Reserved</p>
+                            <p>Copyright prismTribune © {{ date('Y') }}. All Rights Reserved</p>
                         </div>
 
                         <div class="col-md-6">
