@@ -1,8 +1,8 @@
 <head>
     <meta charset="utf-8">
-    <title>ADMAG | Responsive Blog & Magazine HTML Template</title>
+    <title>prismTribune | Home for updated news</title>
     <meta name="keywords" content="HTML5 Template">
-    <meta name="description" content="ADMAG — Responsive Blog & Magazine HTML Template">
+    <meta name="description" content="prismTribune — Home for updated news">
     <meta name="author" content="digitaltheme.co">
     <meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -31,13 +31,13 @@
     <link href="http://fonts.googleapis.com/css?family=Raleway:900" rel="stylesheet" type="text/css">
 
     <!-- Icon Font -->
-    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="{{ asset('plugins/font-awesome/css/font-awesome.css') }}">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="{{ asset('css/style.min.css') }}">
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

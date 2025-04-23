@@ -279,19 +279,19 @@
 
     <!-- Jquery js -->
 
-    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="{{ asset('js/jquery-1.11.2.min.js') }}"></script>
 
 
 
     <!-- Modernizr -->
 
-    <script src="js/modernizr.min.js"></script>
+    <script src="{{ asset('js/modernizr.min.js') }}"></script>
 
 
 
     <!-- Bootstrap js -->
 
-    <script src="plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="{{ asset('plugins/bootstrap/js/bootstrap.js') }}"></script>
 
 
 
@@ -303,7 +303,7 @@
 
     <!-- Theme js -->
 
-    <script src="js/script.min.js"></script>
+    <script src="{{ asset('js/script.min.js') }}"></script>
 
 
 
