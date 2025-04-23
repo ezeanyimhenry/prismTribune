@@ -10,13 +10,14 @@
                                 <p class="clearfix">
                                     <a class="logo" href="/" title="prismTribune - Home for updated news"
                                         rel="home">
-                                        <img src="{{ asset('img/logo.png') }}" alt="Logo" style="width: 150px;">
+                                        <img src="{{ asset('img/logo-white.png') }}" alt="Logo"
+                                            style="width: 150px;">
                                     </a><!-- .logo -->
                                 </p>
                                 <p class="description">
-                                    You are a part of the Rebel Alliance and a traitor! Take her away! You are a
-                                    part of the Rebel Alliance and a traitor! Take her away! Don't underestimate
-                                    the Force. Hey, Luke! May the Force be with you.
+                                    Your comprehensive news hub. We curate stories from diverse sources across the web,
+                                    bringing multiple perspectives together in one convenient location. Stay informed
+                                    with our regularly updated collection of today's essential headlines.
                                 </p>
                                 <ul class="social-list clearfix">
                                     <li class="social-facebook">
@@ -31,34 +32,10 @@
                                             <i class="fa fa-twitter"></i>
                                         </a>
                                     </li>
-                                    <li class="social-gplus">
-                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title=""
-                                            data-original-title="Google+">
-                                            <i class="fa fa-google-plus"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social-youtube">
-                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title=""
-                                            data-original-title="Youtube">
-                                            <i class="fa fa-youtube"></i>
-                                        </a>
-                                    </li>
                                     <li class="social-instagram">
                                         <a href="#" data-toggle="tooltip" data-placement="bottom" title=""
                                             data-original-title="Instagram">
                                             <i class="fa fa-instagram"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social-pinterest">
-                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title=""
-                                            data-original-title="Pinterest">
-                                            <i class="fa fa-pinterest"></i>
-                                        </a>
-                                    </li>
-                                    <li class="social-rss">
-                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title=""
-                                            data-original-title="RSS">
-                                            <i class="fa fa-rss"></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -97,21 +74,15 @@
                             </div><!-- Footer Block -->
                         </div>
 
-                        {{-- <div class="col-md-3">
+                        <div class="col-md-3">
                             <div class="footer-block clearfix">
-                                <h3 class="footer-title">Newsletter</h3>
-                                <p>The more you tighten your grip, Tarkin, the more star systems will slip
-                                    through your fingers.</p>
-                                <form>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Enter your email">
-                                    </div>
-                                    <div class="form-group">
-                                        <button class="btn btn-default" type="button">Subscribe</button>
-                                    </div>
-                                </form>
+                                <h3 class="footer-title">Pages</h3>
+                                <ul class="tags-widget">
+                                    <li><a href="/page/privacy">Privacy policy</a></li>
+                                    <li><a href="#">Terms & Conditions</a></li>
+                                </ul>
                             </div><!-- Footer Block -->
-                        </div> --}}
+                        </div>
                     </div>
                 </div>
             </div>
