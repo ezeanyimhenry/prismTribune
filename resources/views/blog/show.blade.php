@@ -8,7 +8,7 @@
 @section('og_description', Str::limit(strip_tags($article['data']['content']), 200))
 @section('og_image', $article['data']['thumbnail'] ?? asset('img/social-preview-default.jpg'))
 @section('og_type', 'article')
-@section('og_url', route('article.show', $article['data']['id']))
+@section('og_url', route('blog.show', $article['data']['id']))
 
 @section('twitter_title', $article['data']['title'])
 @section('twitter_description', Str::limit(strip_tags($article['data']['content']), 200))
