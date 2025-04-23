@@ -21,7 +21,8 @@
                                 </p>
                                 <ul class="social-list clearfix">
                                     <li class="social-facebook">
-                                        <a href="#" data-toggle="tooltip" data-placement="bottom" title=""
+                                        <a href="https://www.facebook.com/share/19us78UWDJ/?mibextid=wwXIfr"
+                                            data-toggle="tooltip" data-placement="bottom" title=""
                                             data-original-title="Facebook">
                                             <i class="fa fa-facebook"></i>
                                         </a>
@@ -100,7 +101,8 @@
 
                         <div class="col-md-6">
                             <div class="social-icons pull-right">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="https://www.facebook.com/share/19us78UWDJ/?mibextid=wwXIfr"><i
+                                        class="fa fa-facebook"></i></a>
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                                 <a href="#"><i class="fa fa-rss"></i></a>
                             </div>
