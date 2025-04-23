@@ -7,6 +7,20 @@
     <meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="@yield('og_title', 'prismTribune | Home for updated news')">
+    <meta property="og:description" content="@yield('og_description', 'prismTribune — Home for updated news')">
+    <meta property="og:image" content="@yield('og_image', asset('img/social-preview-default.jpg'))">
+    <meta property="og:url" content="@yield('og_url', request()->url())">
+    <meta property="og:type" content="@yield('og_type', 'website')">
+    <meta property="og:site_name" content="prismTribune">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="@yield('twitter_title', 'prismTribune | Home for updated news')">
+    <meta name="twitter:description" content="@yield('twitter_description', 'prismTribune — Home for updated news')">
+    <meta name="twitter:image" content="@yield('twitter_image', asset('img/social-preview-default.jpg'))">
+
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon" />
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-touch-icon-57x57.png">

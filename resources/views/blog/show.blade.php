@@ -1,5 +1,20 @@
 @extends('layouts.blog')
 
+@section('title', $article['data']['title'] . ' | prismTribune')
+@section('meta_description', Str::limit(strip_tags($article['data']['content']), 160))
+@section('meta_keywords', $article['data']['category'] . ', news, prismTribune')
+
+@section('og_title', $article['data']['title'])
+@section('og_description', Str::limit(strip_tags($article['data']['content']), 200))
+@section('og_image', $article['data']['thumbnail'] ?? asset('img/social-preview-default.jpg'))
+@section('og_type', 'article')
+@section('og_url', route('article.show', $article['data']['id']))
+
+@section('twitter_title', $article['data']['title'])
+@section('twitter_description', Str::limit(strip_tags($article['data']['content']), 200))
+@section('twitter_image', $article['data']['thumbnail'] ?? asset('img/social-preview-default.jpg'))
+
+
 @section('content')
     <div class="container main-wrapper">
 
