@@ -109,7 +109,8 @@
                                             <li>
                                                 <article>
                                                     <h3>
-                                                        <a href="{{ $article['id'] }}">{{ $article['title'] }}</a>
+                                                        <a
+                                                            href="{{ route('blog.show', $article['id']) }}">{{ $article['title'] }}</a>
                                                     </h3>
                                                     <p><span><i class="fa fa-clock-o"></i>
                                                             {{ \Carbon\Carbon::parse($article['published_at'])->timezone('Africa/Lagos')->diffForHumans() }}</span>
@@ -134,7 +135,7 @@
 
                                 @if ($mainArticle)
                                     <article class="news-block">
-                                        <a href="{{ $mainArticle['id'] }}" class="overlay-link">
+                                        <a href="{{ route('blog.show', $mainArticle['id']) }}" class="overlay-link">
                                             <figure class="image-overlay">
                                                 <img src="{{ $mainArticle['thumbnail'] }}"
                                                     alt="{{ $mainArticle['title'] }}">
@@ -145,7 +146,8 @@
                                         </a>
                                         <div class="news-details">
                                             <h3 class="news-title">
-                                                <a href="{{ $mainArticle['id'] }}">{{ $mainArticle['title'] }}</a>
+                                                <a
+                                                    href="{{ route('blog.show', $mainArticle['id']) }}">{{ $mainArticle['title'] }}</a>
                                             </h3>
                                             <p>{{ Str::limit($mainArticle['content'] ?? '', 150) }}</p>
                                             <p class="simple-share">
@@ -164,11 +166,13 @@
                                 @foreach ($simplePosts as $article)
                                     <article class="simple-post clearfix">
                                         <div class="simple-thumb">
-                                            <a href="{{ $article['id'] }}"><img src="{{ $article['thumbnail'] }}"
-                                                    alt="{{ $article['title'] }}"></a>
+                                            <a href="{{ route('blog.show', $article['id']) }}"><img
+                                                    src="{{ $article['thumbnail'] }}" alt="{{ $article['title'] }}"></a>
                                         </div>
                                         <header>
-                                            <h3><a href="{{ $article['id'] }}">{{ $article['title'] }}</a></h3>
+                                            <h3><a
+                                                    href="{{ route('blog.show', $article['id']) }}">{{ $article['title'] }}</a>
+                                            </h3>
                                             <p class="simple-share">
                                                 <a href="#">{{ $article['category'] }}</a> /
                                                 <a href="{{ $article['url'] }}">{{ $article['source'] }}</a> -
