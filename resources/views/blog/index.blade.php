@@ -198,7 +198,7 @@
 
                                 @if ($secondMain)
                                     <article class="news-block big-block">
-                                        <a href="{{ $secondMain['id'] }}" class="overlay-link">
+                                        <a href="{{ route('blog.show', $secondMain['id']) }}" class="overlay-link">
                                             <figure class="image-overlay">
                                                 <img src="{{ $secondMain['thumbnail'] }}"
                                                     alt="{{ $secondMain['title'] }}">
@@ -209,7 +209,8 @@
                                         </a>
                                         <header class="news-details">
                                             <h3 class="news-title">
-                                                <a href="{{ $secondMain['id'] }}">{{ $secondMain['title'] }}</a>
+                                                <a
+                                                    href="{{ route('blog.show', $secondMain['id']) }}">{{ $secondMain['title'] }}</a>
                                             </h3>
                                             <p>{{ \Illuminate\Support\Str::limit($secondMain['content'], 200) }}</p>
                                             <p class="simple-share">
@@ -229,7 +230,7 @@
                             @foreach ($secondSubs as $sub)
                                 <div class="col-md-6">
                                     <article class="news-block small-block">
-                                        <a href="{{ $sub['id'] }}" class="overlay-link">
+                                        <a href="{{ route('blog.show', $sub['id']) }}" class="overlay-link">
                                             <figure class="image-overlay">
                                                 <img src="{{ $sub['thumbnail'] }}" alt="{{ $sub['title'] }}">
                                             </figure>
@@ -239,7 +240,7 @@
                                         </a>
                                         <header class="news-details">
                                             <h3 class="news-title">
-                                                <a href="{{ $sub['id'] }}">{{ $sub['title'] }}</a>
+                                                <a href="{{ route('blog.show', $sub['id']) }}">{{ $sub['title'] }}</a>
                                             </h3>
                                             <p class="simple-share">
                                                 {{ $sub['source'] ?? 'Unknown' }} -
@@ -292,14 +293,15 @@
                                     @foreach ($random['data'] as $article)
                                         <article class="widget-post clearfix">
                                             <div class="simple-thumb">
-                                                <a href="{{ $article['id'] }}">
+                                                <a href="{{ route('blog.show', $article['id']) }}">
                                                     <img src="{{ $article['thumbnail'] }}"
                                                         alt="{{ $article['title'] }}">
                                                 </a>
                                             </div>
                                             <header>
                                                 <h3>
-                                                    <a href="{{ $article['id'] }}">{{ $article['title'] }}</a>
+                                                    <a
+                                                        href="{{ route('blog.show', $article['id']) }}">{{ $article['title'] }}</a>
                                                 </h3>
                                                 <p class="simple-share">
                                                     <span><i class="fa fa-clock-o"></i>
@@ -319,13 +321,14 @@
                                     @foreach ($recentFeatured as $recent)
                                         <article class="widget-post clearfix">
                                             <div class="simple-thumb">
-                                                <a href="{{ $recent['id'] }}">
+                                                <a href="{{ route('blog.show', $recent['id']) }}">
                                                     <img src="{{ $recent['thumbnail'] }}" alt="{{ $recent['title'] }}">
                                                 </a>
                                             </div>
                                             <header>
                                                 <h3>
-                                                    <a href="{{ $recent['id'] }}">{{ $recent['title'] }}</a>
+                                                    <a
+                                                        href="{{ route('blog.show', $recent['id']) }}">{{ $recent['title'] }}</a>
                                                 </h3>
                                                 <p class="simple-share">
                                                     <span><i class="fa fa-clock-o"></i>
@@ -393,13 +396,14 @@
                         @if ($thirdMain)
                             <article class="widget-post clearfix">
                                 <div class="simple-thumb">
-                                    <a href="{{ $thirdMain['id'] }}">
+                                    <a href="{{ route('blog.show', $thirdMain['id']) }}">
                                         <img src="{{ $thirdMain['thumbnail'] }}" alt="{{ $thirdMain['title'] }}">
                                     </a>
                                 </div>
                                 <header>
                                     <h3>
-                                        <a href="{{ $thirdMain['id'] }}">{{ $thirdMain['title'] }}</a>
+                                        <a
+                                            href="{{ route('blog.show', $thirdMain['id']) }}">{{ $thirdMain['title'] }}</a>
                                     </h3>
                                     <p class="simple-share">
                                         <span><i class="fa fa-clock-o"></i>
@@ -412,7 +416,7 @@
                             <article class="widget-post clearfix">
                                 <header>
                                     <h3>
-                                        <a href="{{ $sub['id'] }}">{{ $sub['title'] }}</a>
+                                        <a href="{{ route('blog.show', $sub['id']) }}">{{ $sub['title'] }}</a>
                                     </h3>
                                 </header>
                             </article>
@@ -424,13 +428,14 @@
                         @if ($fourthMain)
                             <article class="widget-post clearfix">
                                 <div class="simple-thumb">
-                                    <a href="{{ $fourthMain['id'] }}">
+                                    <a href="{{ route('blog.show', $fourthMain['id']) }}">
                                         <img src="{{ $fourthMain['thumbnail'] }}" alt="{{ $fourthMain['title'] }}">
                                     </a>
                                 </div>
                                 <header>
                                     <h3>
-                                        <a href="{{ $fourthMain['id'] }}">{{ $fourthMain['title'] }}</a>
+                                        <a
+                                            href="{{ route('blog.show', $fourthMain['id']) }}">{{ $fourthMain['title'] }}</a>
                                     </h3>
                                     <p class="simple-share">
                                         <span><i class="fa fa-clock-o"></i>
@@ -443,7 +448,7 @@
                             <article class="widget-post clearfix">
                                 <header>
                                     <h3>
-                                        <a href="{{ $sub['id'] }}">{{ $sub['title'] }}</a>
+                                        <a href="{{ route('blog.show', $sub['id']) }}">{{ $sub['title'] }}</a>
                                     </h3>
                                 </header>
                             </article>
@@ -454,13 +459,14 @@
                         @if ($fifthMain)
                             <article class="widget-post clearfix">
                                 <div class="simple-thumb">
-                                    <a href="{{ $fifthMain['id'] }}">
+                                    <a href="{{ route('blog.show', $fifthMain['id']) }}">
                                         <img src="{{ $fifthMain['thumbnail'] }}" alt="{{ $fifthMain['title'] }}">
                                     </a>
                                 </div>
                                 <header>
                                     <h3>
-                                        <a href="{{ $fifthMain['id'] }}">{{ $fifthMain['title'] }}</a>
+                                        <a
+                                            href="{{ route('blog.show', $fifthMain['id']) }}">{{ $fifthMain['title'] }}</a>
                                     </h3>
                                     <p class="simple-share">
                                         <span><i class="fa fa-clock-o"></i>
@@ -473,7 +479,7 @@
                             <article class="widget-post clearfix">
                                 <header>
                                     <h3>
-                                        <a href="{{ $sub['id'] }}">{{ $sub['title'] }}</a>
+                                        <a href="{{ route('blog.show', $sub['id']) }}">{{ $sub['title'] }}</a>
                                     </h3>
                                 </header>
                             </article>
@@ -482,7 +488,7 @@
                 </div><!-- End news list -->
             </section><!-- .admag-block -->
 
-            <div class="row" data-stickyparent>
+            {{-- <div class="row" data-stickyparent>
                 <div class="col-md-8">
                     <section class="admag-block">
                         <h3 class="block-title"><span>Business</span></h3>
@@ -715,7 +721,7 @@
 
                     </aside><!-- End sidebar -->
                 </div><!-- .col-md-4 .sticky-div -->
-            </div>
+            </div> --}}
 
         </div><!-- .main-content -->
 
