@@ -70,4 +70,7 @@
 
         gtag('config', 'G-7XWQ73NQBE');
     </script>
+
+    <script type='text/javascript' src='//pl26480599.profitableratecpm.com/38/1a/ca/381acae66305b1652528dc5740eeb44a.js'>
+    </script>
 </head>
