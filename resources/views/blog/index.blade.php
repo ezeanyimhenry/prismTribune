@@ -71,7 +71,7 @@
                                         <div class="col-md-4 alpha">
                                             @foreach ($subs as $sub)
                                                 <div class="featured-small {{ $loop->first ? 'featured-top' : '' }}">
-                                                    <a href="{{ $sub['id'] }}" class="featured-href">
+                                                    <a href="{{ route('blog.show', $sub['id']) }}" class="featured-href">
                                                         <img src="{{ $sub['thumbnail'] }}" alt="{{ $sub['title'] }}">
                                                         <div class="featured-header">
                                                             <span class="category bgcolor5">{{ $sub['category'] }}</span>
