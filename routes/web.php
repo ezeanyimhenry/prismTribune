@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [BlogController::class, 'index'])->name('blog.index');
 Route::get('/post/{id}', [BlogController::class, 'show'])->name('blog.show');
+Route::get('/posts/{type}', [BlogController::class, 'posts'])->name('blog.posts');
 
 Route::get('/page/{page}', function ($page) {
     $allowedMethods = ['policy', 'terms', 'about', 'contact'];
