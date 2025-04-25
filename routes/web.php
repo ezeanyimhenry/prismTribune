@@ -15,4 +15,4 @@ Route::get('/page/{page}', function ($page) {
     }
 
     return app(PageController::class)->$page();
-});
+})->name('page');

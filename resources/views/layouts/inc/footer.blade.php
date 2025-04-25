@@ -79,7 +79,7 @@
                             <div class="footer-block clearfix">
                                 <h3 class="footer-title">Pages</h3>
                                 <ul class="tags-widget">
-                                    <li><a href="/page/privacy">Privacy policy</a></li>
+                                    <li><a href="{{ route('page', 'policy') }}">Privacy policy</a></li>
                                     <li><a href="#">Terms & Conditions</a></li>
                                 </ul>
                             </div><!-- Footer Block -->
