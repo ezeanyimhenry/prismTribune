@@ -59,7 +59,7 @@
   <![endif]-->
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XWQ73NQBE"></script>
+    {{-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-7XWQ73NQBE"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -69,7 +69,8 @@
         gtag('js', new Date());
 
         gtag('config', 'G-7XWQ73NQBE');
-    </script>
+    </script> --}}
+
 
     <script type='text/javascript' src='//pl26480599.profitableratecpm.com/38/1a/ca/381acae66305b1652528dc5740eeb44a.js'>
     </script>
