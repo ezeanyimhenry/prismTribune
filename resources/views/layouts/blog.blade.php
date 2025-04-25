@@ -305,6 +305,17 @@
 
     <script src="{{ asset('js/script.min.js') }}"></script>
 
+    <script>
+        function allConsentGranted() {
+            gtag('consent', 'update', {
+                'ad_user_data': 'granted',
+                'ad_personalization': 'granted',
+                'ad_storage': 'granted',
+                'analytics_storage': 'granted'
+            });
+        }
+    </script>
+
     <!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
     <script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js"
         charset="UTF-8"></script>
