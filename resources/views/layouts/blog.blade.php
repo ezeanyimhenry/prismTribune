@@ -264,13 +264,6 @@
 
             </div>
 
-            <div class="customizer-item clearfix">
-                <a href="http://themeforest.net/item/admag-responsive-blog-magazine-html-template/11147481?ref=digitaltheme"
-                    class="btn btn-default btn-purchase">
-                    Purchase
-                </a>
-            </div>
-
         </div>
 
     </div>
@@ -347,6 +340,13 @@
         gtag('js', new Date());
 
         gtag('config', 'G-7XWQ73NQBE');
+
+        gtag('consent', 'update', {
+            'ad_user_data': 'granted',
+            'ad_personalization': 'granted',
+            'ad_storage': 'granted',
+            'analytics_storage': 'granted'
+        });
     </script>
     <!-- end of Google Analytics-->
 

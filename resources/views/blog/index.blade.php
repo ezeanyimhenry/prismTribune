@@ -24,7 +24,9 @@
                     <ul class="tag-list clearfix">
                         <li class="trending">#Sources</li>
                         @foreach ($sources as $source)
-                            <li><a href="page_tags.html">{{ $source }}</a></li>
+                            <li><a
+                                    href="{{ route('blog.posts', ['type' => 'source', 'source' => $source]) }}">{{ $source }}</a>
+                            </li>
                         @endforeach
                     </ul>
                 </div>
@@ -141,7 +143,8 @@
                                                     alt="{{ $mainArticle['title'] }}">
                                             </figure>
                                         </a>
-                                        <a href="#" class="category">
+                                        <a href="{{ route('blog.posts', ['type' => 'category', 'category' => $mainArticle['category']]) }}"
+                                            class="category">
                                             {{ $mainArticle['category'] }}
                                         </a>
                                         <div class="news-details">
@@ -174,7 +177,9 @@
                                                     href="{{ route('blog.show', $article['id']) }}">{{ $article['title'] }}</a>
                                             </h3>
                                             <p class="simple-share">
-                                                <a href="#">{{ $article['category'] }}</a> /
+                                                <a
+                                                    href="{{ route('blog.posts', ['type' => 'category', 'category' => $article['category']]) }}">{{ $article['category'] }}</a>
+                                                /
                                                 <a href="{{ $article['url'] }}">{{ $article['source'] }}</a> -
                                                 <span><i class="fa fa-clock-o"></i>
                                                     {{ \Carbon\Carbon::parse($article['published_at'])->timezone('Africa/Lagos')->diffForHumans() }}
@@ -198,7 +203,9 @@
                     <section class="news-text-block">
                         <div class="row">
                             <div class="col-md-12">
-                                <h3 class="block-title"><span><a href="#">{{ $secondRandomCategory }}</a></span></h3>
+                                <h3 class="block-title"><span><a
+                                            href="{{ route('blog.posts', ['type' => 'category', 'category' => $secondRandomCategory]) }}">{{ $secondRandomCategory }}</a></span>
+                                </h3>
 
                                 @if ($secondMain)
                                     <article class="news-block big-block">
@@ -208,7 +215,8 @@
                                                     alt="{{ $secondMain['title'] }}">
                                             </figure>
                                         </a>
-                                        <a href="#" class="category">
+                                        <a href="{{ route('blog.posts', ['type' => 'category', 'category' => $secondMain['category']]) }}"
+                                            class="category">
                                             {{ $secondMain['category'] }}
                                         </a>
                                         <header class="news-details">
@@ -239,7 +247,8 @@
                                                 <img src="{{ $sub['thumbnail'] }}" alt="{{ $sub['title'] }}">
                                             </figure>
                                         </a>
-                                        <a href="#" class="category">
+                                        <a href="{{ route('blog.posts', ['type' => 'category', 'category' => $sub['category']]) }}"
+                                            class="category">
                                             {{ $sub['category'] }}
                                         </a>
                                         <header class="news-details">
@@ -350,7 +359,9 @@
                             <h3 class="block-title"><span>Categories</span></h3>
                             <ul class="tags-widget">
                                 @foreach ($categories as $category)
-                                    <li><a href="#">{{ $category }}</a></li>
+                                    <li><a
+                                            href="{{ route('blog.posts', ['type' => 'category', 'category' => $category]) }}">{{ $category }}</a>
+                                    </li>
                                 @endforeach
                             </ul>
                         </div>
@@ -363,8 +374,8 @@
                             <ul>
                                 @foreach ($sourceCounts as $source => $count)
                                     <li>
-                                        <a href="#">{{ $source }} <span
-                                                class="count">{{ $count }}</span></a>
+                                        <a href="{{ route('blog.posts', ['type' => 'source', 'source' => $source]) }}">{{ $source }}
+                                            <span class="count">{{ $count }}</span></a>
                                     </li>
                                 @endforeach
                             </ul>

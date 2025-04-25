@@ -10,7 +10,7 @@
                 <div class="col-md-12">
                     <div class="ad728-wrapper">
                         <a href="#">
-                            <img src="img/ban728.jpg" alt="" />
+                            <img src="{{ asset('img/ban728.jpg') }}" alt="" />
                         </a>
                     </div>
                 </div>
@@ -21,31 +21,30 @@
 
             <div class="row blog-content">
                 <div class="col-md-8">
-                    <h3 class="tag-title">Source: <span>iPhone 6</span></h3>
+                    <h3 class="tag-title">Type: <span>{{ $type }}</span></h3>
 
-                    @foreach ($posts as $post)
+                    @foreach ($posts['data']['data'] as $post)
                         <article class="simple-post simple-big clearfix">
                             <div class="simple-thumb">
 
                                 <a href="#">
-                                    <img src="img/medium-thumb/med_thumb3.jpg" alt="">
+                                    <img src="{{ $post['thumbnail'] }}" alt="{{ $post['title'] }}">
                                 </a>
                             </div>
                             <header>
                                 <p class="simple-share">
-                                    <a href="#">{{ $post['data']['data']['category'] }}</a> /
-                                    <a href="{{ $post['data']['data']['url'] }}">{{ $post['data']['data']['source'] }}</a> -
+                                    <a href="#">{{ $post['category'] }}</a> /
+                                    <a href="{{ $post['url'] }}">{{ $post['source'] }}</a> -
                                     <span><i
-                                            class="fa fa-clock-o"></i>{{ \Carbon\Carbon::parse($post['data']['data']['published_at'], 'Africa/Lagos')->diffForHumans() }}</span>
+                                            class="fa fa-clock-o"></i>{{ \Carbon\Carbon::parse($post['published_at'], 'Africa/Lagos')->diffForHumans() }}</span>
                                 </p>
 
                                 <h3>
-                                    <a
-                                        href="{{ route('blog.show', $post['data']['data']['id']) }}">{{ $post['data']['data']['title'] }}</a>
+                                    <a href="{{ route('blog.show', $post['id']) }}">{{ $post['title'] }}</a>
                                 </h3>
 
                                 <p class="excerpt">
-                                    {{ Str::limit($post['data']['data']['content'] ?? '', 150) }}
+                                    {{ Str::limit($post['content'] ?? '', 150) }}
                                 </p>
                             </header>
                         </article>
@@ -411,7 +410,7 @@
                 <div class="col-md-12">
                     <div class="ad728-wrapper">
                         <a href="#">
-                            <img src="img/ban728.jpg" alt="" />
+                            <img src="{{ asset('img/ban728.jpg') }}" alt="" />
                         </a>
                     </div>
                 </div>
