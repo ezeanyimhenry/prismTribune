@@ -21,7 +21,7 @@
 
             <div class="row blog-content">
                 <div class="col-md-8">
-                    <h3 class="tag-title">Type: <span>{{ $type }}</span></h3>
+                    <h3 class="tag-title">Type: <span>{{ $type ?? '' }}</span></h3>
 
                     @foreach ($posts['data']['data'] as $post)
                         <article class="simple-post simple-big clearfix">

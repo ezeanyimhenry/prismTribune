@@ -16,6 +16,7 @@ class BlogController extends Controller
 
     public function index(Request $request)
     {
+        $random = null;
         $randomCategory = null;
         $secondRandomCategory = null;
         $thirdRandomCategory = null;
@@ -137,7 +138,7 @@ class BlogController extends Controller
         return view('blog.show', ['article' => $article]);
     }
 
-    public function posts(Request $request)
+    public function posts(Request $request, string $type)
     {
         $queryParams = $request->only([
             'search',
@@ -153,6 +154,6 @@ class BlogController extends Controller
             return $this->apiService->get("articles", $queryParams);
         });
 
-        return view('blog.posts', compact('posts'));
+        return view('blog.posts', compact('posts', 'type'));
     }
 }
