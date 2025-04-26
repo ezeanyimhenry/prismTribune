@@ -9,9 +9,20 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="ad728-wrapper">
-                        <a href="#">
+                        <script type="text/javascript">
+                            atOptions = {
+                                'key': '42a2f6395a93dc8b234e167f5fc3d6cd',
+                                'format': 'iframe',
+                                'height': 90,
+                                'width': 728,
+                                'params': {}
+                            };
+                        </script>
+                        <script type="text/javascript" src="//www.highperformanceformat.com/42a2f6395a93dc8b234e167f5fc3d6cd/invoke.js">
+                        </script>
+                        {{-- <a href="#">
                             <img src="img/ban728.jpg" alt="" />
-                        </a>
+                        </a> --}}
                     </div>
                 </div>
             </div>
