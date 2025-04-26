@@ -18,6 +18,7 @@ class BlogController extends Controller
     {
         $random = null;
         $randomCategory = null;
+        $randomSource = null;
         $secondRandomCategory = null;
         $thirdRandomCategory = null;
         $fourthRandomCategory = null;
