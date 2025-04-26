@@ -46,31 +46,24 @@
                             <div class="footer-block clearfix">
                                 <h3 class="footer-title">Categories</h3>
                                 <ul class="footer-menu">
-                                    <li><a href="#">Tech</a></li>
-                                    <li><a href="#">Lifestyle</a></li>
-                                    <li><a href="#">Business</a></li>
-                                    <li><a href="#">Entertainment</a></li>
-                                    <li><a href="#">Social</a></li>
-                                    <li><a href="#">Politics</a></li>
+                                    @foreach ($categories->take(10) as $category)
+                                        <li><a
+                                                href="{{ route('blog.posts', ['type' => 'category', 'category' => $category]) }}">{{ $category }}</a>
+                                        </li>
+                                    @endforeach
                                 </ul>
                             </div><!-- Footer Block -->
                         </div>
 
                         <div class="col-md-3">
                             <div class="footer-block clearfix">
-                                <h3 class="footer-title">Tags</h3>
+                                <h3 class="footer-title">Sources</h3>
                                 <ul class="tags-widget">
-                                    <li><a href="#">Windows 10</a></li>
-                                    <li><a href="#">FIFA 2015</a></li>
-                                    <li><a href="#">iPhone 6</a></li>
-                                    <li><a href="#">Flappy Bird</a></li>
-                                    <li><a href="#">World Cup</a></li>
-                                    <li><a href="#">WeChat desktop</a></li>
-                                    <li><a href="#">Clash of Clans</a></li>
-                                    <li><a href="#">Apple Watch</a></li>
-                                    <li><a href="#">Oscar 2015</a></li>
-                                    <li><a href="#">Taken 3</a></li>
-                                    <li><a href="#">Dota</a></li>
+                                    @foreach ($sources->take(15) as $source)
+                                        <li><a
+                                                href="{{ route('blog.posts', ['type' => 'source', 'source' => $source]) }}">{{ $source }}</a>
+                                        </li>
+                                    @endforeach
                                 </ul>
                             </div><!-- Footer Block -->
                         </div>
@@ -103,8 +96,10 @@
                             <div class="social-icons pull-right">
                                 <a href="https://www.facebook.com/share/19us78UWDJ/?mibextid=wwXIfr"><i
                                         class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-rss"></i></a>
+                                <a href="https://x.com/prismtribune?s=21&t=lHyHeLDt-9jfvOkkM_sPHA"><i
+                                        class="fa fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/prismtribune?igsh=MWNrcWhrM3U0azUwNg=="><i
+                                        class="fa fa-instagram"></i></a>
                             </div>
                         </div>
                     </div>
