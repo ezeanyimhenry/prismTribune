@@ -22,7 +22,7 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        View::composer(['layouts.inc.header', 'layouts.inc.footer'], function ($view) {
+        View::composer(['layouts.inc.header', 'layouts.inc.footer', 'layouts.inc.mobile-menu'], function ($view) {
             $apiService = app(ApiService::class);
 
             $data = Cache::remember('footer_categories', 30, function () use ($apiService) {
