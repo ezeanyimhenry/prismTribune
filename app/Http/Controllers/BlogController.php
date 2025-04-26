@@ -23,6 +23,16 @@ class BlogController extends Controller
         $thirdRandomCategory = null;
         $fourthRandomCategory = null;
         $fifthRandomCategory = null;
+        $randomCategoryArticles = collect();
+        $secondRandomCategoryArticles = collect();
+        $thirdRandomCategoryArticles = collect();
+        $fourthRandomCategoryArticles = collect();
+        $fifthRandomCategoryArticles = collect();
+        $randomSourceArticles = collect();
+        $categories = collect();
+        $sources = collect();
+        $featured = null;
+        $data = ['data' => []];
 
         try {
             $queryParams = $request->only([
