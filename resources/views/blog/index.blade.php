@@ -18,8 +18,7 @@
                                 'params': {}
                             };
                         </script>
-                        <script type="text/javascript" src="//www.highperformanceformat.com/42a2f6395a93dc8b234e167f5fc3d6cd/invoke.js">
-                        </script>
+                        <script type="text/javascript" src="//grownwrecking.com/42a2f6395a93dc8b234e167f5fc3d6cd/invoke.js"></script>
                         {{-- <a href="#">
                             <img src="img/ban728.jpg" alt="" />
                         </a> --}}
@@ -376,8 +375,8 @@
                                 @endforeach
                             </ul>
                         </div>
-                        <script async="async" data-cfasync="false"
-                            src="//pl26487893.profitableratecpm.com/af88a4e49525298d95e6d5fcbc8e5158/invoke.js"></script>
+                        <script async="async" data-cfasync="false" src="//grownwrecking.com/af88a4e49525298d95e6d5fcbc8e5158/invoke.js">
+                        </script>
                         <div id="container-af88a4e49525298d95e6d5fcbc8e5158"></div>
                         <div class="widget categorywidget">
                             <h3 class="block-title"><span>Sources</span></h3>
