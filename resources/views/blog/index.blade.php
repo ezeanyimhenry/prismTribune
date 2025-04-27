@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="ad728-wrapper">
-                        <script type="text/javascript">
+                        {{-- <script type="text/javascript">
                             atOptions = {
                                 'key': '42a2f6395a93dc8b234e167f5fc3d6cd',
                                 'format': 'iframe',
@@ -18,7 +18,7 @@
                                 'params': {}
                             };
                         </script>
-                        <script type="text/javascript" src="//grownwrecking.com/42a2f6395a93dc8b234e167f5fc3d6cd/invoke.js"></script>
+                        <script type="text/javascript" src="//grownwrecking.com/42a2f6395a93dc8b234e167f5fc3d6cd/invoke.js"></script> --}}
                         {{-- <a href="#">
                             <img src="img/ban728.jpg" alt="" />
                         </a> --}}
@@ -375,9 +375,9 @@
                                 @endforeach
                             </ul>
                         </div>
-                        <script async="async" data-cfasync="false" src="//grownwrecking.com/af88a4e49525298d95e6d5fcbc8e5158/invoke.js">
+                        {{-- <script async="async" data-cfasync="false" src="//grownwrecking.com/af88a4e49525298d95e6d5fcbc8e5158/invoke.js">
                         </script>
-                        <div id="container-af88a4e49525298d95e6d5fcbc8e5158"></div>
+                        <div id="container-af88a4e49525298d95e6d5fcbc8e5158"></div> --}}
                         <div class="widget categorywidget">
                             <h3 class="block-title"><span>Sources</span></h3>
                             @php
@@ -529,7 +529,7 @@
                 </div>
             </div>
         </div> --}}
-        <script type="text/javascript">
+        {{-- <script type="text/javascript">
             atOptions = {
                 'key': '42a2f6395a93dc8b234e167f5fc3d6cd',
                 'format': 'iframe',
@@ -539,7 +539,7 @@
             };
         </script>
         <script type="text/javascript" src="//www.highperformanceformat.com/42a2f6395a93dc8b234e167f5fc3d6cd/invoke.js">
-        </script>
+        </script> --}}
         <!-- End Main Banner -->
     </div><!-- .main-wrapper -->
 @endsection
