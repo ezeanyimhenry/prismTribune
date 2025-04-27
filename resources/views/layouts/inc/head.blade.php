@@ -78,4 +78,7 @@
 
     <script type='text/javascript' src='//pl26480599.profitableratecpm.com/38/1a/ca/381acae66305b1652528dc5740eeb44a.js'>
     </script>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5700968866281302"
+        crossorigin="anonymous"></script>
 </head>
