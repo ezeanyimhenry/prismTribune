@@ -519,7 +519,7 @@
         </div><!-- .main-content -->
 
         <!-- End Main Banner -->
-        <div class="mag-content clearfix">
+        {{-- <div class="mag-content clearfix">
             <div class="row">
                 <div class="col-md-12">
                     <div class="ad728-wrapper">
@@ -529,7 +529,18 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
+        <script type="text/javascript">
+            atOptions = {
+                'key': '42a2f6395a93dc8b234e167f5fc3d6cd',
+                'format': 'iframe',
+                'height': 90,
+                'width': 728,
+                'params': {}
+            };
+        </script>
+        <script type="text/javascript" src="//www.highperformanceformat.com/42a2f6395a93dc8b234e167f5fc3d6cd/invoke.js">
+        </script>
         <!-- End Main Banner -->
     </div><!-- .main-wrapper -->
 @endsection
