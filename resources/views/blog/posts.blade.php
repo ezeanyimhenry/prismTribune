@@ -51,7 +51,8 @@
                     @endforeach
 
                     <div class="load-more">
-                        <button type="button" class="btn btn-lg btn-block">Load more</button>
+                        <a href="https://grownwrecking.com/ut548hvj?key=c1165ba68652ab5bf106deb1f21309d4" type="button"
+                            class="btn btn-lg btn-block">Load more</a>
                     </div>
 
                 </div><!-- End Left big column -->
