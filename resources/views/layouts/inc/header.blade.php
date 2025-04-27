@@ -62,7 +62,7 @@
                         </nav><!-- .navbar -->
 
                         <div id="sb-search" class="sb-search">
-                            <form>
+                            <form action="{{ route('blog.posts.search') }}">
                                 <input class="sb-search-input" placeholder="Enter your search text..." type="text"
                                     value="" name="search" id="search">
                                 <input class="sb-search-submit" type="submit" value="">

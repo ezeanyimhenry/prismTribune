@@ -22,7 +22,7 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        View::composer(['layouts.inc.header', 'layouts.inc.footer', 'layouts.inc.mobile-menu'], function ($view) {
+        View::composer(['layouts.inc.header', 'layouts.inc.footer', 'layouts.inc.mobile-menu', 'layouts.inc.sidebar'], function ($view) {
             $apiService = app(ApiService::class);
 
             $data = Cache::remember('footer_categories', 30, function () use ($apiService) {
@@ -33,15 +33,21 @@ class ViewServiceProvider extends ServiceProvider
                 ];
             });
 
-            $recentArticles = Cache::remember('footer_recent_articles', 30, function () use ($apiService) {
-                $articles = $apiService->get('articles', ['per_page' => 5]);
-                return collect($articles['data']['data'] ?? []);
+            $recentArticlesSidebar = Cache::remember('sidebar_recent_articles', 30, function () use ($apiService) {
+                $articlesSidebar = $apiService->get('articles', ['per_page' => 5]);
+                return collect($articlesSidebar['data']['data'] ?? []);
+            });
+
+            $randomArticlesSidebar = Cache::remember('sidebar_random_articles', 30, function () use ($apiService) {
+                $articlesSidebar = $apiService->get("articles/random", ['count' => 5]);
+                return collect($articlesSidebar['data']['data'] ?? []);
             });
 
             $view->with([
                 'categories' => $data['categories'],
                 'sources' => $data['sources'],
-                'recentArticles' => $recentArticles,
+                'recentArticlesSidebar' => $recentArticlesSidebar,
+                'randomArticlesSidebar' => $randomArticlesSidebar,
             ]);
         });
     }

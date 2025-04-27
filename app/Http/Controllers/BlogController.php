@@ -167,4 +167,20 @@ class BlogController extends Controller
 
         return view('blog.posts', compact('posts', 'type'));
     }
+
+    public function search(Request $request)
+    {
+        $queryParams = $request->only([
+            'search'
+        ]);
+
+        $search = $request->search;
+
+        // Cache posts
+        $posts = Cache::remember('posts_' . md5(json_encode($queryParams)), 30, function () use ($queryParams) {
+            return $this->apiService->get("articles", $queryParams);
+        });
+
+        return view('blog.search', compact('posts', 'search'));
+    }
 }
