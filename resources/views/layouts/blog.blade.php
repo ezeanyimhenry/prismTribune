@@ -217,11 +217,11 @@
             Generator</a></noscript>
     <!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
 
-    {{-- <script type="text/javascript">
+    <script type="text/javascript">
         var infolinks_pid = 3435614;
         var infolinks_wsid = 0;
     </script>
-    <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script> --}}
+    <script type="text/javascript" src="//resources.infolinks.com/js/infolinks_main.js"></script>
     {{-- <script>
         setTimeout(function() {
             window.open("https://grownwrecking.com/vhp3u9k0?key=05f98bb82899f55f118a2f1f6312cf13", "_blank");
